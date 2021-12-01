@@ -133,7 +133,8 @@ img{
     font-weight: 900;
 }
 
-@media (max-width: 375px){
+
+@media (max-width: 576px){
     body{
         background: url('./images/pattern-background-mobile.svg'), hsl(225, 100%, 94%);
     }
