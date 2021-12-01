@@ -1,0 +1,178 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url('./images/pattern-background-desktop.svg'), hsl(225, 100%, 94%);
+    background-repeat: no-repeat;
+    font-family: 'Red Hat Display';
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    border-radius: 20px;
+    margin: 30px auto;
+}
+
+.container__top > img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.container__bottom{
+    background-color: #ffffff;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-top: -4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title{
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+.desc{
+    margin-top: 15px;
+    font-size: 16px;
+    color: hsl(224, 23%, 55%);
+    opacity: 0.65;
+    width: 75%;
+    text-align: center;
+}
+
+.plan{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    background-color: hsl(225, 100%, 98%);
+    padding: 10px 20px;
+    margin-top: 12px;
+    border-radius: 10px;
+}
+
+.plan__left{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 55%;
+}
+
+.plan__icon{
+    width: 45px;
+    height: 45px;
+}
+
+.plan__name{
+    color: hsl(223, 47%, 23%);
+    font-weight: 700;
+}
+
+.plan__price{
+    color:  hsl(224, 23%, 55%);
+    opacity: 0.65;
+}
+
+.plan__change{
+    color: hsl(245, 75%, 52%);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.plan__change:hover{
+    color: #673ab7cc;
+    text-decoration: none;
+}
+
+.payment_btn{
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 10px 0;
+    margin-top: 25px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px 1px #bec0c594;
+}
+
+.payment_btn:hover{
+    background-color: #673ab7cc;
+}
+
+.cancel_btn{
+    color:  hsl(224, 23%, 55%);
+    opacity: 0.65;
+    font-size: 12px;
+    margin: 25px 0 35px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.cancel_btn:hover{
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+
+@media (max-width: 375px){
+    body{
+        background: url('./images/pattern-background-mobile.svg'), hsl(225, 100%, 94%);
+    }
+
+    .container{
+        width: 280px;
+        margin: 40px 23px;
+    }
+
+    .title{
+        font-size: 17px;
+        margin-top: 20px;
+    }
+    
+    .desc{
+        font-size: 12px;
+        width: 70%;
+    }
+    
+    .plan{
+        padding: 10px 11px;
+    }
+    
+    .plan__left{
+        width: 59%;
+    }
+    
+    .plan__icon{
+        width: 35px;
+        height: 35px;
+    }
+    
+    .plan__name{
+        font-weight: 900;
+        font-size: 12px;
+    }
+    
+    .plan__price, .plan__change{
+        font-size: 12px;
+    }   
+
+}
