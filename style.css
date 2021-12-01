@@ -140,7 +140,7 @@ img{
 
     .container{
         width: 280px;
-        margin: 40px 23px;
+        margin: 40px auto;
     }
 
     .title{
