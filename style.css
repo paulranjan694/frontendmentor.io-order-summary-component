@@ -137,6 +137,7 @@ img{
 @media (max-width: 576px){
     body{
         background: url('./images/pattern-background-mobile.svg'), hsl(225, 100%, 94%);
+        background-repeat: no-repeat;
     }
 
     .container{
